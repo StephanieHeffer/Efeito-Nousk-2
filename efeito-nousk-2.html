@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Arimo", sans-serif;
+      background: #262626;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    ul li {
+      list-style: none;
+      color: #fff;
+      font-size: 6em;
+      font-weight: bold;
+      letter-spacing: 10px;
+      filter: blur(1px);
+      animation: animate 2s linear forwards;
+      /* Adicionado para iniciar automaticamente a animação */
+      animation-delay: 5s;
+      /* Adiciona um atraso de 5 segundos */
+    }
+
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg) translateY(0px);
+        opacity: 1;
+        filter: blur(1px);
+      }
+
+      100% {
+        transform: rotate(45deg) translateY(-200px);
+        opacity: 0;
+        filter: blur(20px);
+      }
+    }
+
+    ul li:nth-child(1) {
+      animation-delay: 1.2s;
+    }
+
+    ul li:nth-child(2) {
+      animation-delay: 1.4s;
+    }
+
+    ul li:nth-child(3) {
+      animation-delay: 1.8s;
+    }
+
+    ul li:nth-child(4) {
+      animation-delay: 2.2s;
+    }
+
+    ul li:nth-child(5) {
+      animation-delay: 2.6s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <ul>
+      <li>N</li>
+      <li>O</li>
+      <li>U</li>
+      <li>S</li>
+      <li>K</li>
+    </ul>
+  </div>
+</body>
+
+</html>
